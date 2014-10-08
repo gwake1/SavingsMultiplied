@@ -1,0 +1,66 @@
+
+body { background-color: #69C4CC; }
+header { background-color: #CFEFEE; }
+nav main { background-color: #F3CECD; }
+section { background-color: #FFFFFF; }
+
+#header {
+	width:70%}
+
+#container {
+	margin: auto}
+
+#first {
+	float: left}
+
+#second {
+	float: left}
+
+#clear	{
+	clear:both}
+
+#headernav ul {
+	float: right;
+	list-style:none;
+	padding:0;
+	margin:0;}
+
+#headernav ul li {
+	display:inline;}
+
+#headernav {
+	margin:5m;
+	padding:5m}
+
+#navmain {
+	background-color: #F3CECD}
+
+#navmain ul {
+	list-style:none;}
+
+#navmain ul li {
+	display:inline;}
+
+#right ul {
+	list-style:none;}
+
+#right ul li {
+	display:inline;}
+
+#socialmedia {
+	float:center;}
+
+#socialmedia ul {
+	list-style:none;}
+
+#socialmedia ul li {
+	display:inline;}
+
+#footerlinks {
+	float:center;}
+
+#footerlinks ul {
+	list-style:none}
+
+#footerlinks ul li {
+	display:inline}	
