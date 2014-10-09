@@ -6,56 +6,77 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<div id="headernav">
-		<nav><!--top half nav-->		
+<header>
+	<nav id="authentication"><!--authentication-->		
+		<div id="headernav">
 				<ul>
-					<li><a href="http://wwww.savingsmultiplied.com/sign_up">Sign Up</li>
-					<li><a href="http://wwww.savingsmultiplied.com/sign_in">Sign In</li>
+					<li class="signin"><a href="#">Sign In</li>
+					<li class="signup"><a href="#">Sign Up</li>
 				</ul>
-	</div>
-
-	<header>
-	<section>
+		</div><!--headernav-->
+	</nav><!--authentication-->
+<section>
 	<div id="container">
-	<div id="left">
-				<a href:"http://wwww.savingsmultiplied.com/"><img src="images/savings-multiplied-logo.png"></a>
-	</div><!--top half left nav-->
-	<div id="right">
+	<div id="logo">
+		<a href:"http://wwww.savingsmultiplied.com/"><img src="images/savings-multiplied-logo.png"></a>
+	</div><!--logo-->
+	<div id="sitenav">
 		<ul>
 			<li><a href="http://wwww.savingsmultiplied.com/about"> About</a></li>
 			<li><a href="http://www.savingsmultiplied.com/contact">Contact</a></li>
 			<li><a href="http://www.savingsmultiplied.com/blog">Blog</a></li>
 			<li><a href="http://wwww.savingsmultiplied.com/press">Press</a></li>
-			<li><img src="Images/tagline.png"></li>
-		</ul>
-	<div id="clear">
-			</section>
-	</div>
-		<nav><!--bottom half nav-->
-	</header>
-	<header>
-		<section>
-	<div id="navmain"><!--nav main-->
+		</ul>		
+		<img src="Images/tagline.png"></a>
+	</div><!--right-->
+</div><!--container-->
+</section>
+<section>
+<nav id="main">
+	<div id="navmain"><!--nav main--> 
 		<ul>
 			<li><a href="http://wwww.savingsmultiplied.com/buy">Buy</li>
 			<li><a href="http://wwww.savingsmultiplied.com/Sell">Sell</li>
 			<li><a href="http://wwww.savingsmultiplied.com/How_It_Works">How it Works</li>
 			<li><a href="http://wwww.savingsmultiplied.com/Links"> Links</li>
 			<li><a href="http://wwww.savingsmultiplied.com/Community">Community</li>
-			<li><a img src="images/search.gif"><form action="if" method="GET"><label form="search_term">search</label><input id="search_term" type="text" placeholder="search"></input><input type="submit" value="search"></input></form></a></li>
+			<li><a form action="if" method="GET">
+				<label form="search_term"></label>
+				<input id="search_term" type="text" placeholder="search"></input>
+				<input type="submit" value="search"></input>
+			  </form>
+			</li>
 		</ul>
-	</div><!--nav main-->
-		</section>
-	</header>
+	</div><!--navmain-->
+</nav>
+</section>
+</header>
+<section>
+<section><!--contentcontainer-->
+	<div id="contentcontainer">
+	<div id="content">
 	<section>
-		<a><img src="Images/owl_44_44.png">buying and selling gently used sets of clothes!</a>	
-		<ol>
+		<a><img src="Images/owl_44_44.png">buying and selling gently used sets of clothes!</a>
+	</section>
+	<section>
+		<a href="Shop Now"><img src="images/left_2_shop_now.png"></a>
+	</section>
+	<section>
+		<a><img src="images/tree.png"></a>
+	</section>
+	</div><!--content-->
+	<div id="babies">
+	<section>
+		<ul>
 			<li><a><img src="images/twins.jpg"></a></li>
 			<li><a><img src="images/triplets.jpg"></a></li>
 			<li><a><img src="images/quads.jpg"></a></li>
-		</ol>
-		<a href="Shop Now"><img src="images/left_2_shop_now.png"></a>
-		<a><img src="images/tree.png"></a>
+		</ul>
+	</section>
+	</div><!--babies-->
+</div><!--content container-->
+</section><!--contentcontainer-->
+<section><!--socialmedia-->
 	<div id="socialmedia">
 		<ul>
 			<li><a href="http://wwww.savingsmultiplied.com/facebook"><img src="images/facebook_callout.png"></a></li>
@@ -64,11 +85,11 @@
 			<li><a href="http://wwww.savingsmultiplied.com/special_offers"><img src="images/special_offers_callout.png"></a></li>
 		</ul>
 	</div><!--Social Media-->
+</section><!--socialmedia-->
+</section>
+<footer>
 		<a><img src="Images/dotted_line_44x9.png"></a>
-	</section>
-	<footer>
-	<div id="footerlinks">
-		<p>
+	<div id="links">
 			<ul>
 				<li><a href="http://wwww.savingsmultiplied.com/link_here1">Link Here</a></li>
 				<li><a href="http://wwww.savingsmultiplied.com/link_here2">Link Here</a></li>
@@ -77,8 +98,42 @@
 				<li><a href="http://wwww.savingsmultiplied.com/link_here5">Link Here</a></li>
 				<li><a href="http://wwww.savingsmultiplied.com/link_here6">Link Here</a></li>
 			</ul>
-		</p>
-	</div><!--footerlinks-->
-	</footer>
+	</div><!--links-->
+</footer>
 </body>
+<script>
+<div class="login-modal">
+<div class="lightbox"></div>
+<div class="login-form">
+	<form>
+	<label>Username</label>
+	<input type="text" placeholder="username">
+	<label>Password</label>
+	<input type="password" placeholder="password"></input>
+	<input type="submit" value="login"></input>
+	<input type="button" value="cancel" class="cancel"></input>
+</div><!--login-form-->
+	</form>
+</div><!--login-modal-->
+	<script>
+		function hide(element) {
+		element.style.display="none";
+		}
+		function show(element){
+		element.style.display="block";
+		}
+		var lightbox= document.querySelector('.lightbox');
+		lightbox.addEventListener('click', function(){
+		hide(document.querySelector('.login-modal'));});
+		var signup= document.querySelector('.signup');
+		signup.addEventListener('click', function() {
+		show(document.querySelector('.login-modal'));});
+		var signin= document.querySelector('.signin');
+		signin.addEventListener('click', function() {
+		show(document.querySelector('.login-modal'));});
+		var cancel= document.querySelector('.cancel');
+		cancel.addEventListener('click', function() {
+		hide(document.querySelector('.login-modal'));});
+
+	</script>
 </html>
