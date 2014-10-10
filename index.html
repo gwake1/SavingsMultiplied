@@ -10,8 +10,8 @@
 	<nav id="authentication"><!--authentication-->		
 		<div id="headernav">
 				<ul>
-					<li class="signin"><a href="#">Sign In</li>
-					<li class="signup"><a href="#">Sign Up</li>
+					<li><a href="#" id="signin">Sign In</li>
+					<li><a href="#" id="signup">Sign Up</li>
 				</ul>
 		</div><!--headernav-->
 	</nav><!--authentication-->
@@ -100,40 +100,39 @@
 			</ul>
 	</div><!--links-->
 </footer>
-</body>
-<script>
-<div class="login-modal">
+
+<div class="loginmodal">
 <div class="lightbox"></div>
 <div class="login-form">
 	<form>
-	<label>Username</label>
+	<label>username</label>
 	<input type="text" placeholder="username">
-	<label>Password</label>
+	<label>password</label>
 	<input type="password" placeholder="password"></input>
 	<input type="submit" value="login"></input>
-	<input type="button" value="cancel" class="cancel"></input>
-</div><!--login-form-->
+	<input type="button" value="cancel" class="cancel">
 	</form>
+</div><!--login-form-->
 </div><!--login-modal-->
-	<script>
-		function hide(element) {
+</body>
+<script>
+		function hide(element){
 		element.style.display="none";
 		}
 		function show(element){
 		element.style.display="block";
 		}
-		var lightbox= document.querySelector('.lightbox');
+		var lightbox = document.querySelector('.lightbox');
 		lightbox.addEventListener('click', function(){
-		hide(document.querySelector('.login-modal'));});
-		var signup= document.querySelector('.signup');
-		signup.addEventListener('click', function() {
-		show(document.querySelector('.login-modal'));});
-		var signin= document.querySelector('.signin');
-		signin.addEventListener('click', function() {
-		show(document.querySelector('.login-modal'));});
-		var cancel= document.querySelector('.cancel');
-		cancel.addEventListener('click', function() {
-		hide(document.querySelector('.login-modal'));});
-
+		hide(document.querySelector('.loginmodal'));});
+		var signup = document.querySelector('#signup');
+		signup.addEventListener('click', function(){
+		show(document.querySelector('.loginmodal'));});
+		var signin = document.querySelector('#signin');
+		signin.addEventListener('click', function(){
+		show(document.querySelector('.loginmodal'));});
+		var cancel = document.querySelector('.cancel');
+		cancel.addEventListener('click', function(){
+		hide(document.querySelector('.loginmodal'));});
 	</script>
 </html>
