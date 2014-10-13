@@ -1,6 +1,7 @@
 <!Doctype html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<Title>Multiple Savings</Title>
 	<meta charset="utf-8">
@@ -101,13 +102,13 @@
 	</div><!--links-->
 </footer>
 
-<div class="loginmodal">
+<div class="loginmodal hidden">
 <div class="lightbox"></div>
 <div class="login-form">
 	<form>
 	<label>username</label>
 	<input type="text" placeholder="username">
-	<label>password</label>
+	<label>password  </label>
 	<input type="password" placeholder="password"></input>
 	<input type="submit" value="login"></input>
 	<input type="button" value="cancel" class="cancel">
@@ -115,24 +116,5 @@
 </div><!--login-form-->
 </div><!--login-modal-->
 </body>
-<script>
-		function hide(element){
-		element.style.display="none";
-		}
-		function show(element){
-		element.style.display="block";
-		}
-		var lightbox = document.querySelector('.lightbox');
-		lightbox.addEventListener('click', function(){
-		hide(document.querySelector('.loginmodal'));});
-		var signup = document.querySelector('#signup');
-		signup.addEventListener('click', function(){
-		show(document.querySelector('.loginmodal'));});
-		var signin = document.querySelector('#signin');
-		signin.addEventListener('click', function(){
-		show(document.querySelector('.loginmodal'));});
-		var cancel = document.querySelector('.cancel');
-		cancel.addEventListener('click', function(){
-		hide(document.querySelector('.loginmodal'));});
-	</script>
+<script src="scripts/script.js"></script>
 </html>
