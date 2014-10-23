@@ -25,16 +25,16 @@ header nav#authentication {
 #sitenav ul li {
 	display:inline;}
 
-.login-modal > body > section, header > section, nav#authentication, footer {
+/*.login-modal > body > section, header > section, nav#authentication, footer {
   	margin: 0 5em;
  	clear: right;
-	}
+	}*/
 
-@media screen and (max-width: 700px){
-  body > section, header >nav#authentication, footer {
+/*@media screen and (max-width: 700px){
+  body > header >nav#authentication, section, footer {
     	margin: 0 2em;
   	}
-	}
+	}*/
 
 nav#main, footer {
   	text-align: center;
@@ -70,6 +70,22 @@ section:after {
 #babies ul li {
   	max-width: 100%;
 	}
+
+#buy_container_left {
+  max-width:20%;
+  float: left;
+}
+
+#buy_container_right {
+  width: 800px;
+  float: right;
+  height: 800px;
+}
+#ajax {
+  width: 800px;
+  float: right;
+  height: 800px;
+}
 
 #socialmedia ul {
   	list-style-type: none;

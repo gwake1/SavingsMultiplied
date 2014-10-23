@@ -69,8 +69,8 @@
           </div><!--condition_content_left-->
           <div id="condition_form_right">
             <form><!--condition_form-->
-              <input type="radio" name="condition_list" id="condition_new" value="New"><label for="New"> New</label><br>
-              <input type="radio" name="condition_list" id="condition_used" value="Used"><label for="Used"> Used</label></li>
+              <input type="radio" name="condition_list" id="condition_new" value="New"><label for="condition_new"> New</label><br>
+              <input type="radio" name="condition_list" id="condition_used" value="Used"><label for="condition_used"> Used</label></li>
             </form>
           </div><!--condition_form-->
         </section>
@@ -103,7 +103,7 @@
             <ul id="type">
               <li><input type ="radio" name="type_list" id="type_any" value="any"><label for="type_any"> Any</label></li>
               <li><input type ="radio" name="type_list" id="type_one-piece" value="one-piece"><label for="type_one-piece"> One-Piece</label></li>
-              <li><input type ="radio" name="type_list" id="type_tops" value="tops"><label for="tpye_tops"> Tops</label></li>
+              <li><input type ="radio" name="type_list" id="type_tops" value="tops"><label for="type_tops"> Tops</label></li>
               <li><input type ="radio" name="type_list" id="type_bottoms" value="bottoms"><label for="type_bottoms"> Bottoms</label></li>
             </ul><!--type-->
       </div><!--type-->
@@ -120,7 +120,13 @@
       </div><!--brand-->
     </div><!--buy_container_left-->
     <div id="buy_container_right"><!--buy_container_right-->
-      <div><!--buy_container_right-->
+      <div class="json">
+        <div id="ajax">
+
+        </div><!--class="item_ul"-->
+      </div><!--id="ajax"-->
+
+    <div><!--buy_container_right-->
   </section>
   <section><!--socialmedia-->
     <div id="socialmedia">
@@ -162,4 +168,5 @@
 </div><!--login-modal-->
 </body>
 <script src="scripts/script.js"></script>
+<script src="scripts/main.js"></scripts>
 </html>
